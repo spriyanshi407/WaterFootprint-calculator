@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Water Footprint - Aqua Footprint</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <meta name="description" content="Learn about water footprint, its importance, and how it's calculated">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="img/logo.png" alt="Aqua Footprint Logo" class="logo">
+                <h1>Aqua Footprint</h1>
+            </div>
+            
+            <nav class="desktop-nav">
+                <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                <a href="wfp.html" class="nav-link active"><i class="fas fa-info-circle"></i> Water Footprint</a>
+                <a href="wfpcal.html" class="nav-link"><i class="fas fa-calculator"></i> Calculator</a>
+                <a href="save.html" class="nav-link"><i class="fas fa-tint"></i> Saving Tips</a>
+            </nav>
+
+            <button class="mobile-menu-btn" onclick="openNav()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="myNav" class="overlay">
+            <button class="closebtn" onclick="closeNav()">&times;</button>
+            <div class="overlay-content">
+                <a href="index.html" onclick="closeNav()"><i class="fas fa-home"></i> Home</a>
+                <a href="wfp.html" onclick="closeNav()"><i class="fas fa-info-circle"></i> Water Footprint</a>
+                <a href="wfpcal.html" onclick="closeNav()"><i class="fas fa-calculator"></i> Calculator</a>
+                <a href="save.html" onclick="closeNav()"><i class="fas fa-tint"></i> Saving Tips</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-hero">
+            <div class="about-hero-content">
+                <h2>Understanding Water Footprint</h2>
+                <p class="hero-subtitle">Measuring our impact on the world's water resources</p>
+            </div>
+        </section>
+
+        <section class="about-content">
+            <div class="content-container">
+                <div class="info-card">
+                    <h3>What is Water Footprint?</h3>
+                    <p>The water footprint is a measure of humanity's appropriation of fresh water in volumes of water consumed and/or polluted. It was introduced by Dutch professor Arjen Hoekstra in 2002 as a way to measure the total volume of freshwater used to produce the goods and services consumed by individuals, communities, or businesses.</p>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-item">
+                        <i class="fas fa-tint"></i>
+                        <h4>Blue Water Footprint</h4>
+                        <p>The volume of surface and groundwater consumed (evaporated or incorporated into a product) as a result of the production of a good or service.</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-cloud"></i>
+                        <h4>Green Water Footprint</h4>
+                        <p>The volume of rainwater consumed during the production process, particularly in agricultural and forestry processes.</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-recycle"></i>
+                        <h4>Grey Water Footprint</h4>
+                        <p>The volume of freshwater required to assimilate pollutants to meet specific water quality standards.</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h3>Why is it Important?</h3>
+                    <p>Understanding and reducing our water footprint is crucial because:</p>
+                    <ul class="importance-list">
+                        <li><i class="fas fa-check-circle"></i> Freshwater is a limited resource, with only 2.5% of Earth's water being fresh</li>
+                        <li><i class="fas fa-check-circle"></i> Many regions face water scarcity and stress</li>
+                        <li><i class="fas fa-check-circle"></i> Water pollution affects ecosystems and human health</li>
+                        <li><i class="fas fa-check-circle"></i> Climate change is altering water availability patterns</li>
+                        <li><i class="fas fa-check-circle"></i> Population growth increases water demand</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>Global Water Footprint Statistics</h3>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-value">1,385 m³</div>
+                            <div class="stat-label">Global average water footprint per capita per year</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">92%</div>
+                            <div class="stat-label">Of humanity's water footprint is related to agriculture</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">2,000 L</div>
+                            <div class="stat-label">Water needed to produce 1kg of rice</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">15,000 L</div>
+                            <div class="stat-label">Water needed to produce 1kg of beef</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h3>How We Calculate Your Water Footprint</h3>
+                    <p>Our calculator considers various aspects of daily water usage:</p>
+                    <div class="calculation-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Direct Water Use</h4>
+                                <p>Water used in daily activities like showering, washing dishes, and watering plants</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Indirect Water Use</h4>
+                                <p>Water used in the production of goods and services you consume</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Virtual Water</h4>
+                                <p>Water embedded in food and other products you use</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta-section">
+                    <h3>Ready to Calculate Your Water Footprint?</h3>
+                    <p>Use our calculator to understand your water usage and find ways to reduce it.</p>
+                    <a href="wfpcal.html" class="cta-button primary">
+                        <i class="fas fa-calculator"></i> Calculate Now
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="img/logo.png" alt="Aqua Footprint Logo" class="footer-logo-img">
+                <h3>Aqua Footprint</h3>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="wfp.html">Water Footprint</a>
+                <a href="wfpcal.html">Calculator</a>
+                <a href="save.html">Saving Tips</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://facebook.com" class="social-link" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Aqua Footprint. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
