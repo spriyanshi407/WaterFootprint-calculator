@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Saving Tips - Aqua Footprint</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <meta name="description" content="Learn practical water saving tips to reduce your water footprint">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="img/logo.png" alt="Aqua Footprint Logo" class="logo">
+                <h1>Aqua Footprint</h1>
+            </div>
+            
+            <nav class="desktop-nav">
+                <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                <a href="wfp.html" class="nav-link"><i class="fas fa-info-circle"></i> Water Footprint</a>
+                <a href="wfpcal.html" class="nav-link"><i class="fas fa-calculator"></i> Calculator</a>
+                <a href="save.html" class="nav-link active"><i class="fas fa-tint"></i> Saving Tips</a>
+            </nav>
+
+            <button class="mobile-menu-btn" onclick="openNav()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="myNav" class="overlay">
+            <button class="closebtn" onclick="closeNav()">&times;</button>
+            <div class="overlay-content">
+                <a href="index.html" onclick="closeNav()"><i class="fas fa-home"></i> Home</a>
+                <a href="wfp.html" onclick="closeNav()"><i class="fas fa-info-circle"></i> Water Footprint</a>
+                <a href="wfpcal.html" onclick="closeNav()"><i class="fas fa-calculator"></i> Calculator</a>
+                <a href="save.html" onclick="closeNav()"><i class="fas fa-tint"></i> Saving Tips</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="tips-hero">
+            <div class="tips-hero-content">
+                <h2>Water Saving Tips</h2>
+                <p class="hero-subtitle">Simple changes that make a big difference</p>
+            </div>
+        </section>
+
+        <section class="tips-categories">
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="bathroom">Bathroom</button>
+                <button class="tab-btn" data-category="kitchen">Kitchen</button>
+                <button class="tab-btn" data-category="outdoor">Outdoor</button>
+                <button class="tab-btn" data-category="lifestyle">Lifestyle</button>
+            </div>
+
+            <div class="tips-content">
+                <!-- Bathroom Tips -->
+                <div class="tips-category active" id="bathroom">
+                    <div class="tip-card">
+                        <i class="fas fa-shower"></i>
+                        <h3>Shorter Showers</h3>
+                        <p>Reduce your shower time by just 2 minutes to save up to 20 gallons of water per shower.</p>
+                        <div class="savings">Potential Savings: 7,300 gallons/year</div>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fas fa-toilet"></i>
+                        <h3>Fix Leaks</h3>
+                        <p>A leaking toilet can waste up to 200 gallons of water per day. Check for leaks regularly.</p>
+                        <div class="savings">Potential Savings: 73,000 gallons/year</div>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fas fa-faucet"></i>
+                        <h3>Turn Off Tap</h3>
+                        <p>Turn off the tap while brushing your teeth or shaving to save up to 4 gallons per minute.</p>
+                        <div class="savings">Potential Savings: 2,920 gallons/year</div>
+                    </div>
+                </div>
+
+                <!-- Kitchen Tips -->
+                <div class="tips-category" id="kitchen">
+                    <div class="tip-card">
+                        <i class="fas fa-utensils"></i>
+                        <h3>Full Loads Only</h3>
+                        <p>Run your dishwasher only when it's full to save water and energy.</p>
+                        <div class="savings">Potential Savings: 1,000 gallons/year</div>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fas fa-sink"></i>
+                        <h3>Efficient Washing</h3>
+                        <p>Use a basin when washing dishes by hand instead of running water continuously.</p>
+                        <div class="savings">Potential Savings: 5,000 gallons/year</div>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fas fa-glass-water"></i>
+                        <h3>Drinking Water</h3>
+                        <p>Keep a pitcher of water in the fridge instead of running the tap until it's cold.</p>
+                        <div class="savings">Potential Savings: 200 gallons/year</div>
+                    </div>
+                </div>
+
+                <!-- Outdoor Tips -->
+                <div class="tips-category" id="outdoor">
+                    <div class="tip-card">
+                        <i class="fas fa-leaf"></i>
+                        <h3>Smart Watering</h3>
+                        <p>Water your garden in the early morning or late evening to reduce evaporation.</p>
+                        <div class="savings">Potential Savings: 1,500 gallons/year</div>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fas fa-car"></i>
+                        <h3>Car Washing</h3>
+                        <p>Use a bucket instead of a hose to wash your car, or visit a commercial car wash that recycles water.</p>
+                        <div class="savings">Potential Savings: 100 gallons/wash</div>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fas fa-tree"></i>
+                        <h3>Native Plants</h3>
+                        <p>Plant drought-resistant native plants that require less water to thrive.</p>
+                        <div class="savings">Potential Savings: 2,000 gallons/year</div>
+                    </div>
+                </div>
+
+                <!-- Lifestyle Tips -->
+                <div class="tips-category" id="lifestyle">
+                    <div class="tip-card">
+                        <i class="fas fa-tshirt"></i>
+                        <h3>Laundry Habits</h3>
+                        <p>Wash full loads of laundry and use cold water when possible.</p>
+                        <div class="savings">Potential Savings: 3,000 gallons/year</div>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fas fa-shopping-bag"></i>
+                        <h3>Conscious Consumption</h3>
+                        <p>Choose products with lower water footprints and support water-conscious companies.</p>
+                        <div class="savings">Varies by product</div>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fas fa-users"></i>
+                        <h3>Spread Awareness</h3>
+                        <p>Share water-saving tips with friends and family to multiply your impact.</p>
+                        <div class="savings">Community Impact</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="water-challenge">
+            <h2>Take the 30-Day Water Saving Challenge</h2>
+            <div class="challenge-content">
+                <div class="challenge-card">
+                    <h3>Week 1: Bathroom Focus</h3>
+                    <ul>
+                        <li>Day 1-3: Take 5-minute showers</li>
+                        <li>Day 4-5: Fix any leaks</li>
+                        <li>Day 6-7: Turn off tap while brushing</li>
+                    </ul>
+                </div>
+                <div class="challenge-card">
+                    <h3>Week 2: Kitchen Focus</h3>
+                    <ul>
+                        <li>Day 8-10: Run full dishwasher loads</li>
+                        <li>Day 11-12: Use basin for hand washing</li>
+                        <li>Day 13-14: Keep water pitcher in fridge</li>
+                    </ul>
+                </div>
+                <div class="challenge-card">
+                    <h3>Week 3: Outdoor Focus</h3>
+                    <ul>
+                        <li>Day 15-17: Water plants in morning</li>
+                        <li>Day 18-19: Use bucket for car wash</li>
+                        <li>Day 20-21: Plant drought-resistant plants</li>
+                    </ul>
+                </div>
+                <div class="challenge-card">
+                    <h3>Week 4: Lifestyle Focus</h3>
+                    <ul>
+                        <li>Day 22-24: Wash full laundry loads</li>
+                        <li>Day 25-26: Choose water-efficient products</li>
+                        <li>Day 27-30: Share tips with others</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="img/logo.png" alt="Aqua Footprint Logo" class="footer-logo-img">
+                <h3>Aqua Footprint</h3>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="wfp.html">Water Footprint</a>
+                <a href="wfpcal.html">Calculator</a>
+                <a href="save.html">Saving Tips</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://facebook.com" class="social-link" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Aqua Footprint. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Tab functionality
+        document.querySelectorAll('.tab-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons and categories
+                document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+                document.querySelectorAll('.tips-category').forEach(category => category.classList.remove('active'));
+                
+                // Add active class to clicked button and corresponding category
+                button.classList.add('active');
+                document.getElementById(button.dataset.category).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Footprint Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="description" content="Calculate your daily water footprint and learn how to conserve water">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1><i class="fas fa-tint"></i> Water Footprint Calculator</h1>
+            <p class="subtitle">Track and reduce your water consumption</p>
+        </div>
+    </header>
+    <main>
+        <section class="calculator-section">
+            <div class="section-header">
+                <h2><i class="fas fa-calculator"></i> Calculate Your Water Footprint</h2>
+                <p class="section-description">Enter your daily water usage in the fields below to calculate your water footprint</p>
+            </div>
+            <form id="calculator-form">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="shower"><i class="fas fa-shower"></i> Shower (minutes)</label>
+                        <input type="number" id="shower" name="shower" min="0" required placeholder="Enter shower duration">
+                        <span class="input-hint">Average shower uses 9.5L per minute</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="dishwasher"><i class="fas fa-utensils"></i> Dishwasher (loads)</label>
+                        <input type="number" id="dishwasher" name="dishwasher" min="0" required placeholder="Enter number of loads">
+                        <span class="input-hint">Average load uses 15L</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="laundry"><i class="fas fa-tshirt"></i> Laundry (loads)</label>
+                        <input type="number" id="laundry" name="laundry" min="0" required placeholder="Enter number of loads">
+                        <span class="input-hint">Average load uses 50L</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="toilet"><i class="fas fa-toilet"></i> Toilet Flushes</label>
+                        <input type="number" id="toilet" name="toilet" min="0" required placeholder="Enter number of flushes">
+                        <span class="input-hint">Average flush uses 6L</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="cooking"><i class="fas fa-utensil-spoon"></i> Cooking (minutes)</label>
+                        <input type="number" id="cooking" name="cooking" min="0" required placeholder="Enter cooking duration">
+                        <span class="input-hint">Average cooking uses 5L per minute</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="gardening"><i class="fas fa-leaf"></i> Gardening (minutes)</label>
+                        <input type="number" id="gardening" name="gardening" min="0" required placeholder="Enter gardening duration">
+                        <span class="input-hint">Average gardening uses 10L per minute</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="drinking"><i class="fas fa-glass-water"></i> Drinking (liters)</label>
+                        <input type="number" id="drinking" name="drinking" min="0" required placeholder="Enter liters consumed">
+                        <span class="input-hint">Recommended: 2L per day</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="cleaning"><i class="fas fa-broom"></i> Cleaning (minutes)</label>
+                        <input type="number" id="cleaning" name="cleaning" min="0" required placeholder="Enter cleaning duration">
+                        <span class="input-hint">Average cleaning uses 8L per minute</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="carwash"><i class="fas fa-car"></i> Car Wash (minutes)</label>
+                        <input type="number" id="carwash" name="carwash" min="0" required placeholder="Enter car wash duration">
+                        <span class="input-hint">Average car wash uses 150L</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="other"><i class="fas fa-plus-circle"></i> Other (liters)</label>
+                        <input type="number" id="other" name="other" min="0" required placeholder="Enter additional water usage">
+                        <span class="input-hint">Any other water consumption</span>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="calculate-btn">
+                        <i class="fas fa-calculator"></i> Calculate Water Footprint
+                    </button>
+                    <button type="reset" class="reset-btn">
+                        <i class="fas fa-redo"></i> Reset Form
+                    </button>
+                </div>
+            </form>
+            <div id="result" class="result-container">
+                <div class="result-content">
+                    <h3>Your Water Footprint</h3>
+                    <div class="result-details"></div>
+                    <div class="water-tips">
+                        <h4>Tips to Reduce Your Water Footprint</h4>
+                        <ul class="tips-list"></ul>
+                    </div>
+                </div>
+            </div>
+            <div class="chart-container">
+                <canvas id="waterFootprintChart"></canvas>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Water Footprint Calculator | <a href="#" class="privacy-link">Privacy Policy</a> | <a href="#" class="about-link">About</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 
